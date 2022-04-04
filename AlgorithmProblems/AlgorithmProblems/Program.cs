@@ -8,6 +8,7 @@ namespace AlgorithmProblems
         {
             Console.WriteLine("1: For Prime Number");
             Console.WriteLine("2: For BubbleSort");
+            Console.WriteLine("3.String Permutation");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -21,9 +22,17 @@ namespace AlgorithmProblems
                     bubbleSort.BubbleSorting();
                     Console.WriteLine();
                     break;
+                    case 3:
+                    Console.WriteLine("Enter the string");
+                    String str =Console.ReadLine();
+                    Permutation permutation= new Permutation();
+
+                    permutation.solution(str);
+                    break;
 
             }
         }
 
     }
+
 }
